@@ -1,0 +1,527 @@
+$color-purple: #261447;
+$color-white: #ffffff;
+$color-orange: #d45a18;
+$color-green: #31cc43;
+$color-drk-green:  #1d7928;
+$color-drk-grey: #333333;
+$color-lt-grey: #f3f3f3;
+$color-black: #000000;
+
+$font-weight-light: 300;
+$font-weight-medium: 700;
+$font-weight-heavy: 900;
+
+
+//--------------General Theme reset items------------------//
+//--Unfortunately these need importants to override--//
+//--------------------base UIKIT rules------------------------//
+
+h1, h2, h3, p, a, span {
+    font-family: 'Lato', sans-serif !important;
+}
+
+p {
+    line-height: 30px;
+    letter-spacing: .5px;
+    font-family: 'Lato', sans-serif !important;
+}
+
+h3 {
+    font-weight: $font-weight-heavy!important;
+}
+
+html {
+    body {
+        background: $color-white;
+    }
+}
+
+.port-header-block {
+    font-family: 'Lato', sans-serif;
+    background-color: $color-purple;
+    min-height: 400px;
+    height: calc(78vh + 53px);
+    .myName {
+        color: $color-orange;
+        font-weight: 700;
+    }
+    .myGreeting {
+        color: $color-white;
+        font-weight: $font-weight-light;
+        letter-spacing: 1px;
+        @media only screen and (max-width: 414px) {
+        font-size: 26px;
+        }
+    }
+    .port-flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }     
+    .viewMyWorkBtn {
+        padding: 12px 20px;
+        border: 1px solid $color-white;
+        max-width: 130px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+         p {
+             margin-bottom: 0px;
+             a {
+             text-align: center;
+             margin-bottom: 0px;
+             font-size: 16px;
+             letter-spacing: 1px;
+             color: $color-white;
+             font-weight: $font-weight-light;
+             }
+         }
+    }
+}
+
+.port-header-block-cap{
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    border-bottom: 10px solid $color-white;
+    min-height: 100px;
+}
+
+.port-header-block-cap::after{
+    content:'';
+    position:absolute;
+    top:0; right:0;
+    width:100%; height:100%;
+    background-color: $color-purple;
+    border-right:40px solid $color-white;
+    
+    -webkit-transform-origin:100% 100%;
+    -ms-transform-origin:100% 100%;
+    transform-origin:100% 100%;
+    
+    -webkit-transform:skewX(158deg);
+    -ms-transform:skewX(158deg);
+    transform:skewX(158deg);
+}
+
+.port-text-email {
+    padding-top: 13%;
+    font-size: 18px;
+    font-weight: $font-weight-light;
+    text-align: right;
+    color: $color-purple;
+    @media only screen and (max-width: 414px) {
+    padding: 0px 20px 20px;
+    text-align: center;
+    }        
+}
+
+///*------Navigation-----*///
+.port-sticky-nav {
+    padding: 5px 20px;
+    @media only screen and (max-width: 414px) {    
+        padding: 0px;
+    }    
+    nav {
+        color:$color-lt-grey;
+    }
+}
+
+.portNav {
+    a {
+        color: $color-purple;
+        margin: 0px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        span {
+            font-weight: $font-weight-heavy;
+            color: $color-orange;
+        
+        }
+    }
+    a:hover {
+        color: $color-orange;
+    }
+}
+
+.portMainCopy {
+    color: $color-purple;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    @media only screen and (max-width: 414px) { 
+    padding: 0px 20px;
+    }       
+}
+
+.port-slider-container {
+    background-color: $color-lt-grey;
+    padding: 20px 20px 0px 20px;
+    .uk-slidenav {
+        svg {
+            color: $color-orange;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.myWork {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-color: $color-white;
+    .myWorkContainer {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.myWork:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+.port-project-block {
+        padding-left: 60px !important;
+} 
+
+.port-switch-container {
+    .port-switcher {
+        @media only screen and (min-width: 414px) {        
+            padding-left: 40px !important;
+            padding-right: 10px;
+        }
+    }    
+    .port-unordered-list {
+        padding: 50px 0px 40px;
+        background-color: $color-lt-grey;
+        li {
+            width: 90%;
+            text-align: center;
+            @media only screen and (max-width: 950px) {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 414px) {
+        padding: 10px 0px 5px 0px; 
+        height: 280px;   
+            li {    
+                margin-left: 15px;
+                width: 90%;
+            }
+        }                    
+    }
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        li {
+            a {
+                border: 1px solid $color-purple;
+                color: $color-purple;
+                padding: 12px 20px !important;
+            }
+        }
+        .uk-active {
+            a {
+                background-color: $color-purple;
+                color: $color-white !important;
+                padding: 12px 20px;
+                border: 1px solid $color-drk-grey;
+            }
+            .port-project-link {
+                background-color: $color-purple;
+                color: $color-white !important;
+                padding: 12px 20px;
+                border: 1px solid $color-drk-grey;
+                max-width: 230px;
+                margin: 0px auto 0px;
+                text-align: center;
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-weight: $font-weight-light;
+                @media only screen and (max-width: 414px) {  
+                    padding-left: 0px !important;
+                }                
+            }
+        }
+    }
+    .uk-subnav-pill>*>:first-child {
+        color: $color-purple;
+    } 
+    .port-logos {
+        margin-top: 30px;
+        max-width: 100px;
+        padding-bottom: 10px;
+        @media only screen and (max-width: 414px) {  
+            padding-left: 20px;
+        }        
+    }
+    .hp-port-logos {
+        max-width: 130px;
+        margin-top: 30px;
+    }   
+}
+
+
+
+.port-who-me {
+    padding: 0px 20px 20px;
+    p {
+        padding: 0px 40px;
+    }
+}
+
+.port-site-card-copy {
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        padding: 5px 0px;
+        font-weight: $font-weight-heavy;
+        letter-spacing: 1px;
+        color: $color-purple !important;
+    }
+}
+
+.progress {
+  width:100px;
+  height: 100%;
+}
+.port-progress-wrap {
+  background: $color-purple;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid $color-purple;
+    @media only screen and (max-width: 414px) {  
+    width: 90% !important;
+    margin-left: 18px;
+    @media only screen and (max-width: 320px) {
+    margin-left: 12px;    
+    }  
+    }        
+}
+.port-progress-bar {
+    margin-left: 29%;
+    background:$color-purple;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width:0%;
+    height: 40px;
+    @media only screen and (max-width: 320px) {
+    margin-left: 40%;    
+    }    
+} 
+
+.port-skills-title {
+    font-size: 14px;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: $color-white;
+}
+
+.port-skills-percentage {
+    float: right;
+    padding-right: 2%;
+    line-height: 31px;
+}
+
+.port-model-header {
+    margin: 0 auto;
+    max-width: 603px;
+    display: flow-root;
+    z-index: 9999;
+    @media only screen and (max-width: 414px) {
+    max-width: 100%;
+    }
+}
+
+.loadingGlow {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+.port-fact-button {
+    background-color: $color-black;
+    color: $color-green;
+    border: 1px solid $color-green;
+    margin: 0;
+    overflow: visible;
+    -webkit-appearance: none;
+    border-radius: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: .875rem;
+    line-height: 38px;
+    text-align: center;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color,border-color;
+}
+
+.fact-gen-button {
+text-align: center;
+    button {
+        padding: 12px 20px;
+        border: 1px solid $color-drk-grey;
+        max-width: 230px;
+        margin: 0px auto 0px;
+        background-color: $color-white;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: $color-drk-grey;
+        font-weight: $font-weight-light;
+    }
+}
+
+.port-fact-button:visited {
+    border: 2px solid $color-green;
+}
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px $color-white, 0 0 20px $color-white, 0 0 30px $color-drk-green, 0 0 40px $color-drk-green, 0 0 50px $color-drk-green, 0 0 60px $color-drk-green, 0 0 70px $color-drk-green;
+    }
+    
+    to {
+      text-shadow: 0 0 20px $color-white, 0 0 30px $color-green, 0 0 40px $color-green, 0 0 50px $color-green, 0 0 60px $color-green, 0 0 70px $color-green, 0 0 80px $color-green;
+    }
+  }
+
+     #output {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    color: $color-green;
+    max-width: 190px;
+  }
+  
+  #output:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: $color-green;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 1s linear infinite alternate;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .port-about-title {
+      padding-top: 20%;
+  }
+
+  .port-me-button {
+    border: 2px solid $color-purple;
+    padding: 10px 20px;
+    background-color: $color-white;
+    letter-spacing: 1px;
+    font-weight: $font-weight-heavy;
+  }
+
+.port-contact-us-block {
+    background-color: $color-purple;
+    p {
+        color: $color-white;
+    }
+    .port-contact-header {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: $font-weight-light;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .port-contact-subtext {
+        font-weight: $font-weight-light;
+    }
+    .port-contact-details {
+        margin-top: 0px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        @media only screen and (max-width: 414px) {
+            font-size: 14px;
+        }        
+    }
+    img {
+        max-width: 100px;
+        @media only screen and (max-width: 414px) {
+            max-width: 70px;
+        }        
+    }
+    a {
+        color: $color-orange;
+    }
+}
+
+.port-mobile-sidenav {
+    max-height: 60px;
+    opacity: 0.9;
+    .uk-icon {
+        padding: 0px 0px 20px 15px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px !important;
+    li {
+        .port-mobile-nav {
+                    position: initial !important;
+
+        }
+    }
+}
+
+.uk-offcanvas-bar {
+    .uk-offcanvas-close {
+    color: #fff!important;
+    }
+    ul {
+        margin-top: 39px;
+        li {
+                line-height: 35px;
+                border-top: solid $color-orange 1px;            
+        }
+    }
+}
+
+.port-nav-phone {
+    max-width: 40px;
+    padding-right: 10px;
+}
+
+#modal-example {
+    .uk-modal-body {
+        background-color: $color-black;
+    }
+}
+  

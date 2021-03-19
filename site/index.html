@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ben Thomas-Gill's Portfolio</title>
+<meta name="description" content="The portfolio for Front End Web Developer Ben Thomas-Gill">
+<meta name="keywords" content="Ben Thomas-Gill, Front End Developer, Google Tag Manager, MailChimp, HTML, CSS, SCSS, Web Developer, Perth, Australia">
+<meta name="author" content="Ben Thomas-Gill">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles/styles.css">
+<link rel="stylesheet" href="./css/uikit.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/uikit.min.js"></script>
+<script src="./js/scripts.js"></script>
+</head>
+
+<body>
+<div class="uk-card uk-card-default port-sticky-nav" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+    <nav class="portNav uk-visible@s">
+        <a href="/#"><span>BENTHOMASGILL</span></a> |
+        <a href="#my-work" uk-scroll>MY WORK</a> |
+        <a href="#featured-projects" uk-scroll>FEATURED PROJECTS</a> |
+        <a href="#about-me" uk-scroll>ABOUT ME</a> | 
+        <a href="#contact">CONTACT ME</a>
+    </nav>
+    <nav class="uk-navbar uk-navbar-container uk-hidden@s port-mobile-sidenav">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#port-mobile-nav"></a><span class="uk-margin-small-left">Menu</span>
+        </div>
+        <div class="uk-navbar-right">
+            <a href="#contact"><img class="port-nav-phone" src="./images/mailMenu.jpg"></a>
+        </div>
+    </nav>
+</div>
+
+<div id="port-mobile-nav" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul>
+            <li><a class="uk-offcanvas-close port-mobile-nav" href="#my-work" uk-scroll>MY WORK</a></li>
+            <li><a class="uk-offcanvas-close port-mobile-nav" href="#featured-projects" uk-scroll>FEATURED PROJECTS</a></li>
+            <li><a class="uk-offcanvas-close port-mobile-nav" href="#about-me" uk-scroll>ABOUT ME</a></li>
+            <li><a class="uk-offcanvas-close port-mobile-nav" href="#contact" uk-scroll>CONTACT ME</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="port-header-block">
+    <div class="port-flex">
+        <div class="uk-position-center">
+            <h1 class="uk-text-center myGreeting">Hello, I'm <span class="myName">Ben Thomas-Gill</span>.<br>I'm a front end developer</h1>
+                <div class="uk-animation-toggle" tabindex="0">
+                  <div class="viewMyWorkBtn uk-animation-fade">
+                        <p><a href="#my-work" uk-scroll>View My Work ></a></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="port-header-block-cap uk-visible@m"></div>
+
+<!--Blank Block-->
+<div class="uk-margin-large-top"></div>
+
+<h3 class="uk-text-center" id="my-work">My Work</h3>
+<p class="uk-text-center portMainCopy uk-margin-large-bottom">I have worked as a front-end developer for three years, after spending a year as a digital designer. I've worked in-house for the Fashion Apparel company named Brand Collective spending my time building, maintaining, and upgrading 10 eCommerce websites. I was also responsible for building both marketing and automated emails in Salesforce, Mailchimp, and Mandrill.</p>
+    
+<div class="port-slider-container">
+    <div uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.superdry.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="./images/SD.jpg" alt="Superdry Australia Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Superdry</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.hushpuppies.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="./images/HP.jpg" alt="Hush Puppies Australia Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Hush Puppies</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.shoesandsox.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="./images/SAS.jpg" alt="Shoes and Sox Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Shoes and Sox</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.clarks.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="./images/clarks.jpg" alt="Clarks Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Clarks</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.shoewarehouse.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/SWH.jpg" alt="Shoe Warehouse Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Shoe Warehouse</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.elkacollective.com">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/elka.jpg" alt="Elka Collective">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Elka Collective</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>                
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.elwood.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/elwood.jpg" alt="Elwood Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Elwood</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.elwd.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/elwd.jpg" alt="Elwd Workwear Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Elwd Workwear</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.volley.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/volley.jpg" alt="Volley Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Volley Australia</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.juliusmarlow.com.au">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/JM.jpg" alt="Julius Marlow Website">
+                            </div>
+                            <div class="port-site-card-copy">
+                                <h3 class="uk-card-title">Julius Marlow</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" aria-label="Previous panel" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" aria-label="Next panel" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+</div>
+
+<div class="myWork">
+    <div class="myWorkContainer">
+<h3 class="uk-text-center uk-margin-remove-bottom uk-margin-large-top">Marketing Email Expert</h3>
+<div class="uk-grid uk-grid-collapse uk-margin-top uk-margin-large-bottom">
+    <div  class="uk-width-1-2@s uk-width-1-1" uk-scrollspy="cls: uk-animation-slide-left;">
+        <p class="port-text-email">I have built over 4500 marketing emails in Mailchimp & Salesforce during my time as a front-end developer. As a result, I have become a stickler for keeping up with email standards and unfortunately a bit of an expert in the use of tables.</p>
+    </div>
+    <div  class="uk-width-1-2@s uk-width-1-1" uk-scrollspy="cls: uk-animation-slide-right;">
+        <img alt="excellent email building skills" src="./images/emailMockup.png">
+    </div>
+</div>
+
+<h3 class="uk-text-center  uk-margin-large-top">Third Party implementations</h3>
+<p class="uk-text-center portMainCopy">During my time as a developer, I've had the chance to implement third-party solutions including but not limited to Timetrade, Bazaar Voice & Student Beans. I've also worked with Google Tag Manager to implement tracking for services like Klaviyo, Tik Tok, AdRoll, Adwords, and Crazy Egg.</p>
+
+<div class="uk-text-center uk-margin-large-bottom" >
+    <img class="uk-margin-auto" alt="Google Optimize, Google Analytics and Google Tag Manager" src="images/tracking.jpg">
+</div>
+
+<!--Blank Block-->
+<div class="uk-margin-large-top"></div>
+
+<h3 class="uk-text-center" id="featured-projects">Featured Projects</h3>
+
+<div class="port-switch-container" uk-grid>
+    <ul class="uk-subnav uk-subnav-pill uk-width-1-3@m uk-width-1-1 port-unordered-list" uk-switcher="animation: uk-animation-fade">
+        <li><a href="#">ARAS WORDPRESS SITE</a></li>
+        <li><a href="#">CLARKS BACK TO SCHOOL</a></li>
+        <li><a href="#">HUSH PUPPIES COMMUNITY PAGES</a></li>
+        <li><a href="#">VOLLEY WEBSITE UI/UX UPDATE</a></li>
+    </ul>
+    <ul class="uk-switcher uk-margin uk-width-2-3@m uk-width-1-1 port-switcher">
+        <li>
+            <div class="uk-grid">
+                <div class="uk-width-1-3@s uk-width-1-1 uk-visible@s">
+                    <img class="uk-margin-bottom"  alt="ARAS Industrial Abeiling Wordpress Screen Grab" src="./images/aras1.png">
+                    <img alt="ARAS Industrial Abeiling Wordpress Homepage Screen Grab" src="./images/aras2.png">
+                </div>
+                <div class="uk-width-2-3@s uk-width-1-1 port-project-block">
+                    <img class="port-logos" alt="ARAS logo" src="./images/aras_logo.png">
+                    <p class="uk-margin-remove-top portMainCopy"><strong>ARAS INDUSTRIAL ABSEILING WORDPRESS UPDATE AND REDESIGN</strong><br/><br/>
+                        ARAS Industrial Abseiling approached me to update their WordPress site to something more modern and sleek.<br><br>
+                        The final result created a site that matched the quality of the work they were doing.<br><br>
+                        This project was completed using a template we customised to fit the branding of the ARAS Industrial Abseiling's logo and brand guidelines.<br><br>
+                        <a class="port-project-link uk-visible@s" target=”_blank href="https://clarks.com.au/follow-in-their-footsteps/">ARAS Industrial Abseiling Wordpress ></a>                
+                    </p>
+                    <div class="port-slider-container uk-hidden@s uk-margin-bottom uk-margin-bottom uk-hidden@s uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+                        <div uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid uk-grid-collapse">
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/aras1.png" alt="ARAS Industrial Abeiling Wordpress Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/aras2.png" alt="ARAS Industrial Abeiling Wordpress Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/aras3.png" alt="ARAS Industrial Abeiling Wordpress Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-grid ">
+                <div class="uk-width-1-3@s uk-width-1-1 uk-visible@s">
+                    <img class="uk-margin-bottom"  alt="Clarks Back to School Screen Grab" src="./images/clarks1.png">
+                    <img alt="Clarks Back to School Homepage Screen Grab" src="./images/clarks2.png">
+                </div>
+                <div class="uk-width-2-3@s uk-width-1-1 port-project-block">
+                    <img class="port-logos" alt="Clarks logo" src="./images/clarks_logo.png">
+                    <p class="uk-margin-remove-top portMainCopy"><strong>CLARKS BACK TO SCHOOL CAMPAIGN</strong><br><br>
+                        Every year around Back to School time I was tasked with building the campaign pages.<br><br> 
+                        The first few years we were lead by the UK site's designs which was a fun challenge to replicate, but the most recent iteration was a collaboration with local artist Young Earl Grey. 
+                        <br><br>
+                        Working with such vivid artwork and interesting designs was a great opportunity to work with some rarely used CSS styling. 
+                        <br><br>
+                        <a class="port-project-link uk-visible@s" target=”_blank href="https://clarks.com.au/follow-in-their-footsteps/">Clarks Back to School Campaign ></a>
+                    </p>
+                    <div class="port-slider-container uk-hidden@s uk-margin-bottom uk-margin-bottom uk-hidden@s uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+                        <div uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid uk-grid-collapse">
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/clarks1.png" alt="Clarks Back to School Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/clarks2.png" alt="Clarks Back to School Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/clarks3.png" alt="Clarks Back to School Homepage Screen Grab">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-grid">
+                <div class="uk-width-1-3@s uk-width-1-1 uk-visible@s">
+                    <img class="uk-margin-bottom" alt="Hush Puppies Community Page" src="./images/HP1.png">
+                    <img alt="Hush Puppies Homepage Screen Grab" src="./images/HP2.png">
+                </div>
+                <div class="uk-width-2-3@s uk-width-1-1 port-project-block">
+                    <img class="hp-port-logos port-logos" alt="Hush Puppies logo" src="./images/HP_logo.png">
+                    <p class="uk-margin-remove-top portMainCopy"><strong>HUSH PUPPIES COMMUNITY PAGES</strong><br/><br/>
+                        The Hush Puppies Community pages were a great project around the brand's sustainability focus. <br><br>
+                        Its designs utilised a news article design with custom font and tricky div layouts to be built. <br><br>
+                        I enjoyed creating these pages not only for the different designs but also because of the great concept they represented. <br><br>
+                        <a class="port-project-link uk-visible@s" target=”_blank href="https://hushpuppies.com.au/community/">Hush Puppies Community Campaign ></a>
+                    </p>
+                    <div class="port-slider-container uk-hidden@s uk-margin-bottom uk-margin-bottom uk-hidden@s uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+                        <div uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid uk-grid-collapse">
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/HP1.png" alt="Hush Puppies Community Page">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/HP2.png" alt="Hush Puppies Community Page">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/HP3.png" alt="Hush Puppies Community Page">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-grid ">
+                <div class="uk-width-1-3@s uk-width-1-1 uk-visible@s">
+                    <img class="uk-margin-bottom" alt="Volley Hompage Screen Grab" src="./images/volley1.png">
+                    <img alt="Volley Category Page Screen Grab" src="./images/volley2.png">
+                </div>
+                <div class="uk-width-2-3@s uk-width-1-1 port-project-block">
+                    <img class="hp-port-logos port-logos" alt="Volley logo" src="./images/volley_logo.png">
+                    <p class="uk-margin-remove-top portMainCopy"><strong>VOLLEY WEBSITE UI/UX UPDATE</strong><br/><br/>
+                        The Volley UI/UX update was a fun project because we used an external designer and the result was quite different compared to some of the other projects I was a part off.<br><br/>
+                        The old site looked tired and the subtle use of on brand colour splashes on a white canvas created a final product the brand were very happy with.
+                        </br></br>
+                        <a class="port-project-link uk-visible@s" target=”_blank href="https://volley.com.au/">Volley Website UI/UX Update ></a>
+                    </p>
+                    <div class="port-slider-container uk-hidden@s uk-margin-bottom uk-margin-bottom uk-hidden@s uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+                        <div uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid uk-grid-collapse">
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/volley1.png" alt="Volley Australia Website">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/volley2.png" alt="Volley Australia Website">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="./images/volley3.png" alt="Volley Australia Website">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--Blank Block-->
+<div class="uk-margin-large-top"></div>
+
+<h3 class="uk-text-center uk-margin-large-top" id="about-me">About Me</h3>
+<div class="uk-grid uk-grid-collapse uk-margin-top">
+            <div class="port-who-me uk-width-1-2@s uk-width-1-1 uk-padding-remove" uk-scrollspy="cls: uk-animation-slide-left;">
+                <div class="port-image">
+                    <img alt="Ben Thomas-Gill" src="images/Ben-Thomas-Gill.png">
+                </div>
+                <p class="uk-text-center portMainCopy">A little about me, I started my development journey studying IT and decided I liked creating a whole lot more than asking people to turn their computer off and on again. Here's a nice breakdown of what makes up a Ben Thomas-Gill.</p>
+            </div>
+        <div  class="uk-width-1-2@s uk-width-1-1" uk-scrollspy="cls: uk-animation-slide-right;">
+            <div class="port-progress-wrap progress" data-progresspercent="40" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">Pizza</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="40" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">CSS</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="50" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">Coffee</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="30" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">Javascript</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="50" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">Video Games</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="60" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">HTML</span><div class="port-progress-bar progress"></div>
+            </div>
+            <div class="port-progress-wrap progress" data-progresspercent="40" data-height="33px" data-width="80%" data-speed="1500" data-color="ffffff">
+                <span class="port-skills-title">Good UI/UX</span><div class="port-progress-bar progress"></div>
+            </div>
+    </div>
+</div>
+
+<div class="uk-grid uk-grid-collapse uk-margin-top">
+    <div  class="uk-width-1-1 uk-margin-large-top uk-margin-large-bottom">
+            <p class="uk-text-center portMainCopy">About me's are always so forced so I've built this handy randoms facts machine should you want to know</br> more about what gets me out of bed in the morning.</p>
+            <div class="fact-gen-button">
+                <button class="uk-margin-small-right" type="button" uk-toggle="target: #modal-example" onclick="loadFact()">Load a Random Fact ></button>
+            </div>
+    </div>
+
+
+<div id="modal-example" uk-modal>
+    <img class="port-model-header" src="images/header.png">
+    <div class="uk-modal-dialog uk-modal-body">
+        <p id="output"></p>
+        <p class="uk-text-right">
+            <button class="port-fact-button uk-modal-close" type="button">Close</button>
+            <button class="port-fact-button" type="button" onclick="loadFact()">New Fact</button>
+        </p>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+<footer>
+<div id="contact" class="port-contact-us-block uk-padding-large">
+    <div class="uk-text-center">
+        <img class="uk-margin-auto" alt="Contact Me" src="images/contact.jpg">
+    </div>
+    <p class="uk-text-center port-contact-header uk-margin-small-bottom">
+        Want to have a chat about a project or better yet want me as part of your team?
+    </p>
+    <p class="uk-text-center port-contact-details uk-margin-remove-bottom"><span class="port-contact-subtext">Email:</span> <a href="mailto:benthomasgill@yahoo.com.au">benthomasgill@yahoo.com.au</a><br>
+    <span class="port-contact-subtext">Phone:</span> <a href="tel: 0433359760">0433359760</a></p>
+</div>
+</footer>
+</html>
+
+
